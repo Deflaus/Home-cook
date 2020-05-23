@@ -87,7 +87,7 @@ def callories_button():
 def callories():
     try:
         int(Window.Weight.text())
-        Window.label_callories.setText("Количество каллорий: " + str(int(Window.Weight.text())*call[Window.Title.text()]))
+        Window.label_callories.setText("Количество калорий: " + str(int(Window.Weight.text())*call[Window.Title.text()]))
     except:
         Window.label_callories.setText("Введите целое число(!)")
 
@@ -137,7 +137,7 @@ def findrecbutclicked():
                     Window.listWidget_3.addItem(item)
                     Window.TopRec1.setVisible(True)
         else:
-            Window.label_error.setText("Рецептов с такими ингридентами нет(")
+            Window.label_error.setText("Рецептов с такими ингредиентами нет(")
     except:
         pass
 
